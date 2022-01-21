@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get video and/or audio from youtube</title>
+
+    <link rel="stylesheet" href="./pico.min.css" />
+    <script type="text/javascript" src="./eel.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Get video and/or audio from YouTube</h1>
+      </header>
+      <main class="grid">
+        <article>
+          <header>Download video or audio from Youtube</header>
+          <form id="searchlink" method="get">
+            <p>
+              <label>
+                <input
+                  type="url"
+                  id="slink"
+                  placeholder="Paste YouTube link here..."
+                />
+              </label>
+            </p>
+            <p>
+              <label for="submit">
+                <input
+                  type="submit"
+                  value="Let's go"
+                  name="submit"
+                  id="search"
+                  disabled
+                />
+              </label>
+            </p>
+          </form>
+          <article id="result">
+            <header>
+              <h4 id="title">Waiting link...</h4>
+              <progress id="charging"></progress>
+            </header>
+            <p id="author"></p>
+          </article>
+        </article>
+        <article>
+          <header>Download options</header>
+          <p>
+            <label for="vora">
+              <select name="vora" id="vora">
+                <option value="null">Select stream</option>
+                <option value="video/webm">Video/webm</option>
+                <option value="video/mp4">Video/mp4</option>
+                <option value="audio">Audio</option>
+              </select>
+            </label>
+          </p>
+          <fieldset>
+            <legend>Options</legend>
+            <p id="options"></p>
+            <button id="dl" disabled>Download</button>
+            <p id="downloading"></p>
+          </fieldset>
+          <p>
+            <small>Download saved directly on Music folder.</small>
+          </p>
+        </article>
+      </main>
+      <footer>
+        <p>
+          By:
+          <a href="http://chavezcastillok.github.io" target="__blank"
+            >@chavezcastillok</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
