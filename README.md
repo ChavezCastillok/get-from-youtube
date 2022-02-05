@@ -1,3 +1,7 @@
+# **Archived Note**
+This development is part of one of my internships with python and my knowledge of frontend web development, so it is not necessary to keep it active.
+> January 2022
+
 # Get from YouTube
 
 Get video and/or audio from YouTube. Web-UI for **pytube** using **eel**.
